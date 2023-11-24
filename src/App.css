@@ -1,38 +1,66 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #7b8396;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+}
+.App-main {
+  padding-top: 50px;
+  max-width: 619px;
+}
+.App-main-block {
+  display: flex;
+  justify-content: center;
+}
+.App-main__calendar {
+  margin-top: 50px;
+}
+.Events-page__wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 300px) and (max-width: 821px) {
+  .App-main__form {
+    width: 95%;
+    padding: 0 20px;
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .Events-page__wrapper {
+    width: 80%;
+  }
+  .App-main__form .MuiInputBase-root {
+    width: 100%;
+  }
+  .ListOfEvents-Container__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .item__buttons-group {
+    display: block;
+  }
+  .item__Form {
+    width: 100%;
+  }
+  .item__buttons-group {
+    margin-top: 20px;
+  }
+  .item__buttons-group button {
+    margin-right: 20px;
+  }
+  .App-main-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .App-main__form > h3 {
+    margin-left: 0;
   }
 }

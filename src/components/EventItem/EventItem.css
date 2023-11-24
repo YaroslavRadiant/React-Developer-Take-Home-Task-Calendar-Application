@@ -1,0 +1,22 @@
+.item {
+  text-align: left;
+}
+.item__text span {
+  color: #1976d2;
+}
+.item__buttons-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.item__buttons-group:first-child {
+  margin-bottom: 20px;
+}
+.item__Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item__Form > div:not(:last-child) {
+  margin-bottom: 20px;
+}

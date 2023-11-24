@@ -1,0 +1,17 @@
+.ListOfEvents-Container {
+  margin-top: 20px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ListOfEvents-Container__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 559px;
+}
